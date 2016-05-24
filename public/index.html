@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <script type="text/javascript" src= "calculate.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="outer">
+            <header>
+                <h1 class="header">StudentDB</h1>
+            </header>
+            <div class="activities">
+                <h3 class="subheader">Data Entry</h3>
+                <br/>
+                <p>Enter Student Details</p>
+                <br/>
+                <form name="markcalculator">
+                    <fieldset>
+                        <table style="width:800px" id="tbl1">
+                            <thead>
+                                <tr>
+                                    <th>Name (max length 8)</th> <th>Height (inches)</th> <th>Weight (lbs)</th> <th>Favorite Color</th> <th>GPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" maxlength="8"; class="grd" id="nm1" name="nm1"></td>
+                                    <td><input type="number" max="100" min="1"; class="grd" id="ht1" name="ht1"></td>
+                                    <td><input type="number" max="500" min="1"; class="grd" id="wt1" name="wt1"></td>
+                                    <td><input type="color" class="grd" id="cl1" name="cl1"></td>
+                                    <td><input type="number" max="4.5" step="0.1" min="0"; class="grd" id="gp1" name="gp1"></td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td><input type="text" maxlength="8"; class="grd" id="nm2" name="nm2"></td>
+                                    <td><input type="number" max="100" min="1"; class="grd" id="ht2" name="ht2"></td>
+                                    <td><input type="number" max="500" min="1"; class="grd" id="wt2" name="wt2"></td>
+                                    <td><input type="color" class="grd" id="cl2" name="cl2"></td>
+                                    <td><input type="number" max="4.5" step="0.1" min="0"; class="grd" id="gp2" name="gp2"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" maxlength="8"; class="grd" id="nm3" name="nm3"></td>
+                                    <td><input type="number" max="100" min="1"; class="grd" id="ht3" name="ht3"></td>
+                                    <td><input type="number" max="500" min="1"; class="grd" id="wt3" name="wt3"></td>
+                                    <td><input type="color" class="grd" id="cl3" name="cl3"></td>
+                                    <td><input type="number" max="4.5" step="0.1" min="0"; class="grd" id="gp3" name="gp3"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" maxlength="8"; class="grd" id="nm4" name="nm4"></td>
+                                    <td><input type="number" max="100" min="1"; class="grd" id="ht4" name="ht4"></td>
+                                    <td><input type="number" max="500" min="1"; class="grd" id="wt4" name="wt4"></td>
+                                    <td><input type="color" class="grd" id="cl4" name="cl4"></td>
+                                    <td><input type="number" max="4.5" step="0.1" min="0"; class="grd" id="gp4" name="gp4"></td>
+                                </tr>
+                                -->
+                            </tbody>
+                        </table>
+                        <div id="buttons">
+                            <button type="submit" onclick="insertStudents()" id="btnAdd">Add Student</button>
+                            <button type="submit" onclick="insertStudents(); visualize();" id="btnCont">Add & Visualize</button>
+                            <button type="submit" onclick="insertStudents(); visualize();" id="btnView">Visualize</button>
+                            <!--
+                            <button type="button" onclick="addtablerow()" id="addRow">ADD ROW</button>
+                            <button type="button" onclick="removetablerow()" id="delRow">DELETE ROW</button>
+                            <button type="button" onclick="clearValues()" id="clr">CLEAR</button>
+                            <button type="button" onclick="avgofgrades()" id="avg">AVERAGE</button>
+                            <button type="button" onclick="meanofgrades()" id="mean">MEAN</button>
+                            -->
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
